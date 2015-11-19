@@ -1,0 +1,38 @@
+@import "../variables";
+
+$console-primary: #675091;
+
+#consolelog {
+    .bottom-border:after {
+        border-color: transparent transparent $console-primary;
+    }
+    .top-border:before {
+        border-color: $console-primary transparent transparent;
+    }
+    
+    section.primary, section.button-container {
+        background: $console-primary;
+    }
+    
+    .portfolio-title {
+        color: $console-primary;
+        word-break: break-all;
+    }
+     
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen
+    and (max-width : 1024px) {
+        .portfolio-title {
+            font-size: 6em;
+        }
+    }
+    
+        /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (max-width : 640px) {
+        .portfolio-title {
+            font-size: 3.5em;
+        }
+    }
+
+}

@@ -1,9 +1,236 @@
-<html>
+<!doctype html>
+
+<html lang="en">
 	<head>
-		<title>Joel Saupe</title>
+	   	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	  	<title>Joel Saupe: Web Developer</title>
+	  	<meta name="description" content="Joel Saupe: Web Dev">
+	  	<meta name="author" content="SitePoint">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  	<link rel="stylesheet" href="css/scss/base.min.css">
+	  
+
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
 	</head>
-	<body>
-	<h1 style="text-align:center">Joel Saupe</h1>
+
+	<body data-spy="scroll" data-target="#navbar">
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+           <div class="container-fluid" id="navfluid">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs" href="#"><img src="img/joelsaupe.navbar.svg" /></a>
+               </div>
+               <div class="collapse navbar-collapse" id="navigationbar">
+                   <ul class="nav navbar-nav">
+	            		<li><a href="#about">about</a></li>
+	            		<li><a href="#projects">projects</a></li>
+	            		<li class="hidden-xs brand-container"><a class="navbar-brand" href="#"><img src="img/joelsaupe.navbar.svg" /></a></li>
+	            		<li><a href="#resume">resume</a></li>
+	            		<li><a href="#contact">contact</a></li>
+                   </ul>
+              </div><!-- /.navbar-collapse -->
+           </div><!-- /.container-fluid -->
+        </nav>
+		<header class="bottom-border" id="home">
+			<img src="img/joelsaupe.header.svg" alt="Joel Saupe" />
+			<h2>
+                <span class="title">Software Engineer</span>
+                <span class="title">Web Developer</span>
+                <span class="title">UI/UX Designer</span>
+            </h2>
+		</header>
+		<section class="primary" id="about">
+			<div class="container">
+				<h1>Hello, my name is Joel.</h1>
+				<p>
+					I am a full-stack web developer based in Salt Lake City, Utah, with a love for designing and building amazing web applications. My passion is making great, user-friendly software. I work mostly as a Django and AngularJS developer, but I'm always up for working with any technology.
+				</p>	
+			</div>			
+			
+		</section>
+		<section class="top-border" id="projects">
+<!--        <section class="" id="projects">-->
+			<div class="container">
+				<h1>Things I've worked on.</h1>
+                <div class="portfolio-list">
+                    <div class="portfolio-item">
+                        <img src="img/nayeli-saupe-photography-thumb.jpg" alt="Nayeli Saupe Photography" />
+                        <h3 class="portfolio-item-title">
+                            <a href="/nayeli-saupe-photography/">Nayeli Saupe Photography</a>
+                            <i class="fa fa-globe"></i>
+                        </h3>
+                        <a href="/nayeli-saupe-photography/" class="more">View More</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/url-shrtnr-thumb.jpg" alt="URL Shrtnr" />
+                        <h3 class="portfolio-item-title">
+                            <a href="/url-shrtnr/">URL Shrtnr</a>
+                            <i class="fa fa-globe"></i>
+                            <i class="fa fa-puzzle-piece"></i>
+                        </h3>
+                        <a href="/url-shrtnr/" class="more">View More</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/chrome-extensions.png" alt="Chrome Extensions" />
+                        <h3 class="portfolio-item-title">
+                            <a href="/chrome-extensions/">Chrome Extensions</a>
+                            <i class="fa fa-puzzle-piece"></i>
+                        </h3>
+                        <a href="/chrome-extensions/" class="more">View More</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/consolelog-thumb.png" alt="consolelog.io" />
+                        <h3 class="portfolio-item-title">
+                            <a href="/consolelog-io/">consolelog.io <small>blog</small></a>
+                            <i class="fa fa-globe"></i>
+                        </h3>
+                        <a href="/consolelog-io/" class="more">View More</a>
+                    </div>
+                </div>
+			</div>
+		</section>
+		<section id="resume" class="bottom-border">
+			<div class="container">
+				<div class="paper">
+				<h1>
+                    Resume <a href="/Joel-Saupe-resume.pdf" download class="circle-button pull-right"><i class="fa fa-download primary-color"></i></a>
+                </h1>
+				<div class="row">
+					<div class="col-md-4">
+						<h3>Education</h3>
+						<div class="job-description">
+							<div class="job__title">
+								University of Utah
+							</div>
+							<div class="job__info">
+								<div class="company">Computer Science Major</div>
+								<div class="date-range">Fall 2016 Expected</div>
+							</div>
+							<div class="job__description">
+								Member of NSLA, National Society of Leadership and Success.
+							</div>
+						</div>
+						<div class="job-description">
+							<div class="job__title">
+								Viewmont High School
+							</div>
+							<div class="job__info">
+								<div class="date-range">Graduated 2010</div>
+							</div>
+							<div class="job__description">
+								3.99/4.0 GPA. Focused on college preparation including AP and college-level courses. Member of FBLA, Track & Field (Team Captain).
+							</div>
+						</div>
+						<h3>Skills</h3>
+						<ul class="skills-list">
+							<li>JavaScript</li>
+							<li>AngularJS</li>
+							<li>JQuery</li>
+							<li>Python</li>
+							<li>Django</li>
+							<li>Sass</li>
+                            <li>Gulp</li>
+							<li>HTML5 / CSS3</li>
+							<li>MySQL</li>
+							<li>AWS</li>
+
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<h3>Professional Experience</h3>
+						<div class="job-description">
+							<div class="job__title">
+								Starry Night Studios, LLC
+							</div>
+							<div class="job__info">
+								<div class="company">Co-Founder</div>
+								<div class="date-range">2014 - Present</div>
+							</div>
+							<div class="job__description">
+								Helped design and implement web solutions for clients based on client's needs and demands. Projects ranged in scale from Wordpress websites, to medium size web applications, and were implemented using Ruby on Rails and Django. Helped in critical decision making, and focused on front-end development needs.
+							</div>
+						</div>
+						<div class="job-description">
+							<div class="job__title">
+								IDFL Laboratory & Institute
+							</div>
+							<div class="job__info">
+								<div class="company">Software Engineer</div>
+								<div class="date-range">2013 - Present</div>
+							</div>
+							<div class="job__description">
+								Worked as a full-stack developer using Django, and AngularJS. Helped design and develop new internal and external systems. Maintained and implemented new features in legacy Django system. Desiigned and developed project APIs using DjangoREST. Lead design and development of client tools. Designed and implemented user-friendly solutions to complex business processes.
+							</div>
+						</div>
+
+					</div>
+					</div>
+				</div>
+			</div>
+		
+		</section>
+        
+		<section id="contact" class="primary">
+			<div class="container">
+				<h1>I'm all over the internet!</h1>
+				<ul class="link-list">
+					<li>
+						<a href="https://www.behance.net/joelsaupe" target="_blank">
+                            <i class="fa fa-behance"></i>
+                            <span class="link-label">behance</span>
+                        </a>
+					</li>
+					<li>
+						<a href="http://codepen.io/joelsaupe/" target="_blank">
+                            <i class="fa fa-codepen"></i>
+                            <span class="link-label">codepen</span>
+                        </a>
+					</li>
+					<li>
+						<a href="https://github.com/joelsaupe" target="_blank">
+                            <i class="fa fa-github"></i>
+                            <span class="link-label">github</span>
+                        </a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/joelsaupe" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                            <span class="link-label">linkedin</span>
+                        </a>
+					</li>
+					<li>
+						<a href="https://twitter.com/joelsaupe" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <span class="link-label">twitter</span>
+                        </a>
+					</li>
+					<li>
+						<a href="mailto:joel@sau.pe" target="_blank">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="link-label">email</span>
+                        </a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<footer></footer>
 	
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
 </html>

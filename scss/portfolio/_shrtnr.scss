@@ -1,0 +1,21 @@
+@import "../variables";
+
+$shrtnr-primary: #7c7c7c;
+
+#shrtnr {
+    .bottom-border:after {
+        border-color: transparent transparent $shrtnr-primary;
+    }
+    .top-border:before {
+        border-color: $shrtnr-primary transparent transparent;
+    }
+    
+    section.primary, section.button-container {
+        background: $shrtnr-primary;
+    }
+    
+    .portfolio-title {
+        color: $shrtnr-primary;
+    }
+    
+}

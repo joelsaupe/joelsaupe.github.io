@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	   	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	  	<title>Joel Saupe: sau.pe URL Shrtnr</title>
+	  	<meta name="description" content="Joel Saupe: Web Dev">
+	  	<meta name="author" content="SitePoint">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  	<link rel="stylesheet" href="/css/scss/base.min.css">
+	  
+
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+	</head>
+
+	<body id="shrtnr">
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+           <div class="container-fluid" id="navfluid">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs" href="/#"><img src="/img/joelsaupe.navbar.svg" /></a>
+               </div>
+               <div class="collapse navbar-collapse" id="navigationbar">
+                   <ul class="nav navbar-nav">
+	            		<li><a href="/#about">about</a></li>
+	            		<li class="active"><a href="/#projects">projects</a></li>
+	            		<li class="hidden-xs brand-container"><a class="navbar-brand" href="/#"><img src="/img/joelsaupe.navbar.svg" /></a></li>
+	            		<li><a href="/#resume">resume</a></li>
+	            		<li><a href="/#contact">contact</a></li>
+                   </ul>
+              </div><!-- /.navbar-collapse -->
+           </div><!-- /.container-fluid -->
+        </nav>
+		<header class="bottom-border">
+			<h1 class="portfolio-title">
+                sau.pe URL Shrtnr
+                <img src="/img/ChromeWebStore_Badge.png">
+            </h1>
+		</header>
+		<section class="primary">
+			<div class="container summary-container">
+                <div class="col-md-6">
+                    <h1>Project Details</h1>
+                    <p>This project started out as a simple proof of concept. I always thought that URL shorteners were a clever social media trick, and I thought it would be fun to try and make my own using our family's domain. I used Django to create the backend with a simple mySQL database to store the shortened URLs. I wanted to keep the design and flow of the app as simple and easy as possible to ensure that it would be useful.</p> 
+                    <ul class="tools-list">
+                        <li>Django</li>
+                        <li>jQuery</li>
+                        <li>mySQL</li>
+                    </ul>
+                    
+                </div>
+				<div class="col-md-6 display">
+                    <img src="/img/url-shrtnr-1.png" alt="url shrtnr mobile example">
+                </div>
+			</div>			
+			
+		</section>
+        
+		<section class="top-border bottom-border">
+			<div class="container">
+				<div class="col-md-6 display">
+                    <img src="/img/url-shrtnr-extension.png" alt="url shrtnr chrome extension">
+                </div>
+                <div class="col-md-6">
+                    <h1>Chrome Extension</h1>
+                    <p class="summary">Once I got the shortener to work, I was really excited about it, but knew that I had to make the process even easier. I had never developed a Chrome extension, but I thought it would be really useful to be able to just click a button and have the current page automatically shortened and copied to the clipboard. So I set out to making a simple Chrome extension that does just that. Now, with the extension installed, sharing links with the sau.pe URL shortener is literally as easy as clicking a button.</p> 
+                    
+                </div>
+			</div>	
+        </section>
+        <section class="button-container">
+            <div>
+                <a class="previous" href="/nayeli-saupe-photography/"><i class="fa fa-chevron-left"></i> Previous Project</a>
+            </div>
+            <div class="action multiple-buttons">
+                <a class="action-button" href="https://chrome.google.com/webstore/detail/saupe-url-shrtnr/ghefbepohloadbooaphdolhipglahkjb" target="_blank"><i class="fa fa-download"></i> download</a>
+                <a class="action-button" href="http://sau.pe/shrtnr/" target="_blank">check it out</a>
+                <a class="action-button" href="https://github.com/joelsaupe/url_shrtnr" target="_blank"><i class="fa fa-code"></i> source code</a>
+            </div>
+            <div>
+                <a class="next" href="/chrome-extensions/"><i class="fa fa-chevron-right"></i> Next Project</a>
+            </div>
+        </section>
+        
+		
+	
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>

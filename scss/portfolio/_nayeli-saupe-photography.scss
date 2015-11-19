@@ -1,0 +1,122 @@
+@import "../variables";
+
+$nayeli-primary: #f5c2d4;
+$nayeli-secondary: #404040;
+
+#nsp {
+    header img {
+        margin-bottom: 0;    
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: $fontFamily;
+    }
+
+    .bottom-border:after {
+        border-color: transparent transparent $nayeli-primary;
+    }
+    .top-border:before {
+        border-color: $nayeli-primary transparent transparent;
+    }
+    
+    section.primary {
+        background: $nayeli-primary;
+    }
+    
+    .nsp-mockup {
+        background-image: url(/img/nayeli-saupe-photography/white-mockup.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .color-scheme {
+//        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .container {
+            text-align: center;
+        }
+        img {
+            width: 75%;
+        }
+    }
+    .black-background {
+        background: $nayeli-secondary;
+    }
+    .logo-container {
+        & > div {
+            padding: 1em;
+        }
+    }
+    
+    
+    .button-container {
+        background: $nayeli-primary;
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        div {
+            flex: 1;
+            text-align: center;
+        }
+        a {
+            text-align: center;
+            font-size: 1.4em;
+            color: $white;
+            i {
+                display: block;
+                font-size: 3em;
+            }
+            &:hover, &:active {
+                color: $white;
+                border-bottom: solid 5px white;
+                text-decoration: none;
+            }
+        }
+        div.action {
+            flex: 3;
+        }
+        .action-button {
+            font-size: 2em;
+        }
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen
+    and (max-width : 1024px) {
+        .nsp-mockup {
+            min-height: 50vh;
+        }
+        .color-scheme img {
+            width: 100%;
+        }
+//        .button-container {
+//            .action-button {
+//                font-size: 2em;
+//            }
+//        }
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (max-width : 640px) {
+        
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+        }
+        .nsp-mockup {
+            min-height: 30vh;
+        }
+//        .button-container {
+//            flex-direction: column;
+//            .action-button {
+//                font-size: 2em;
+//            }
+//            div {
+//                margin-bottom: 3em;
+//            }
+//        }
+    }
+    
+}

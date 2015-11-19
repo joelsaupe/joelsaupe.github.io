@@ -1,0 +1,74 @@
+.bottom-border {
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		left: 0px;
+	  	width: 0;
+	  	height: 0;
+	  	border-style: solid;
+	  	border-width: 0 0 12vh 100vw;
+	  	border-color: transparent transparent $primary transparent;
+	}
+}
+
+
+.top-border {
+	&:before {
+		content: '';
+		position: absolute;
+		top: -1px;
+		left: 0px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 12vh 100vw 0 0;
+		border-color: $primary transparent transparent transparent;
+	}
+}
+
+section {
+	min-height: 50vh;
+	position: relative;
+	padding: 10em 5em;
+
+	p {
+		text-align: justify;
+		font-size: 2em;
+		line-height: 1.6;
+		padding-top: 1em;
+	}
+	h1 {
+		font-size: 4em;
+	}
+}
+
+
+section.primary {
+	background: $primary;
+	color: $white;
+}
+
+#contact {
+    padding-bottom: 20em;
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 1024px) {
+    
+    
+    section {
+        padding: 3em 0em;
+        p {
+            line-height: 1.4em;
+            font-size: 1.8em;
+            text-align: left;
+        }
+    }
+    .top-border {
+        padding-top: 8em;
+    }
+}

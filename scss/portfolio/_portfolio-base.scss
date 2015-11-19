@@ -1,0 +1,192 @@
+@import "../variables";
+@import "nayeli-saupe-photography";
+@import "consolelog-io";
+@import "extensions";
+@import "shrtnr";
+
+
+.portfolio-title {
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 10em;
+    color: $primary;
+    padding: 20vh 0;
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.portfolio-subtitle {
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 5em;
+    color: $gray;
+    padding: 5vh 0;
+}
+
+.tools-list {
+    font-family: $fontFamily;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li {
+        background: rgba(0,0,0,.12);
+        margin: 0em 0.51em;
+        padding: 0.1em 0.3em;
+        border-radius: 5px;
+        box-shadow: 0px 3px;
+    }
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.summary-container {
+
+    p {
+        color: $white;
+        line-height: 1.2;
+        font-size: 1.5em;
+        text-align: justify;
+        a {
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom: solid 3px;
+            &:hover, &:active {
+                color: rgba(255, 255, 255, 0.9);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+p.summary {
+    line-height: 1.2;
+    font-size: 1.5em;
+    text-align: justify;
+    margin-bottom: 5em;
+}
+
+section img {
+    width: 100%;
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 1024px) {
+    .tools-list {
+        flex-wrap: wrap;
+        li {
+            text-align: center;
+            font-size: 0.8em;
+            margin-bottom: 0.4em;
+            flex: 0 0 20%;
+        }
+    }
+    
+    .portfolio-title {
+        font-size: 5em;
+    }
+    section h1 {
+        font-size: 3em;
+    }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 640px) {
+        .tools-list {
+        flex-wrap: wrap;
+        li {
+            flex: 0 0 45%;
+        }
+    }
+}
+
+
+    
+
+.button-container {
+    background: $primary;
+    display: flex;
+    align-items: center;
+    padding: 2em 0em;
+    div {
+        flex: 1;
+        text-align: center;
+    }
+    a {
+        text-align: center;
+        font-size: 1.4em;
+        color: $white;
+        white-space: nowrap;
+        display: inline-block;
+        border-bottom: solid 5px transparent;
+        margin-bottom: 1em;
+        i {
+            display: block;
+            font-size: 3em;
+        }
+        &:hover, &:active {
+            color: $white;
+            border-bottom: solid 5px white;
+            text-decoration: none;
+        }
+    }
+    div.action {
+        flex: 3;
+    }
+    .action-button {
+        cursor: pointer;
+        border: solid 5px white;
+        border-radius: 10px;
+        padding: 0.5em 1em;
+        font-size: 2em;
+        i {
+            font-size: 1em;
+            display: inline-block;
+        }
+        &:hover, &:active {
+            background: transparentize($white, 0.7);
+        }
+    }
+}
+
+.button-bar {
+    @extend .button-container;
+    background: transparent;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 1024px) {
+    .button-container {
+        .action-button {
+            font-size: 2em;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 640px) {
+    .button-container {
+        flex-direction: column;
+        .action-button {
+            font-size: 2em;
+        }
+        div {
+            margin-bottom: 3em;
+        }
+    }
+}

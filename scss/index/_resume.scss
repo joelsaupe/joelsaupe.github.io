@@ -1,0 +1,75 @@
+@import "../variables";
+
+.job-description {
+	padding: 2em 0em;
+	.job__title {
+		font-size: 1.4em;
+		color: $primary;
+	}
+
+	.job__info {
+		font-size: 1.3em;
+		.company {
+			font-weight: bold;
+			display: inline-block;
+		}
+		.date-range {
+			display: inline-block;
+			color: $gray;
+		}
+	}
+
+	.job__description {
+		font-size: 1.2em;
+		line-height: 1.4;
+		text-align: justify;
+	}
+
+}
+
+.skills-list {
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+.paper {
+	width: 90%;
+    background: #fff;
+	margin: auto auto 5em auto;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.23);
+	padding: 5rem 3rem;
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 1024px) {
+    .paper {
+        padding: 4rem 2rem;
+    }
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            flex: 1 1 25%;
+            text-align: center;
+            margin-bottom: 0.4em;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 640px) {
+    .paper {
+        padding: 3rem 1rem;
+        width: 95%;
+    }
+    .skills-list {
+        li {
+            flex: 1 1 50%;
+        }
+    }
+}
